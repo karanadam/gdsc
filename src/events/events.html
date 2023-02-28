@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./events.css">
-    <script type="text/javascript" src="./events.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript" defer src="./events.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -116,7 +117,7 @@
 
             <div class=" flex items-center justify-center">
                 <div class="basis-1/3 flex items-center justify-center">
-                    <article
+                    <article data-aos="fade-up" data-aos-duration="600"
                         class="overflow-hidden rounded-md shadow transition hover:shadow-xl w-96 hover:skew-y-3 hover:scale-110">
                         <img alt="Office"
                             src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-dsc/events/WhatsApp%20Image%202023-02-09%20at%2012.43.18.jpg"
@@ -149,7 +150,7 @@
                     </article>
                 </div>
                 <div class="basis-1/3 flex items-center justify-center ">
-                    <article
+                    <article data-aos="fade-up" data-aos-duration="600"
                         class="overflow-hidden rounded-md shadow transition hover:shadow-xl w-96 hover:skew-y-3 hover:scale-110">
                         <img alt="Office"
                             src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-dsc/events/WEB%20DEV%28black%29var%207%20%282%29.jpg"
@@ -177,7 +178,7 @@
                     </article>
                 </div>
                 <div class="basis-1/3 flex items-center justify-center">
-                    <article
+                    <article data-aos="fade-up" data-aos-duration="600"
                         class="overflow-hidden rounded-md shadow transition hover:shadow-xl w-96 hover:skew-y-3 hover:scale-110">
                         <img alt="Office"
                             src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-dsc/events/WhatsApp%20Image%202022-12-22%20at%2010.35.44%20PM.jpeg"
@@ -211,7 +212,7 @@
             </div>
             <div class="flex items-center justify-center mt-20">
                 <div class="basis-1/2 flex items-center justify-center">
-                    <article
+                    <article data-aos="fade-up" data-aos-duration="600"
                         class="overflow-hidden rounded-md shadow transition hover:shadow-xl w-96 hover:skew-y-3 hover:scale-110">
                         <img alt="Office"
                             src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-dsc/event_banners/Kotlin-DSC-Promo-Event-Page-Thumbnail-R2-NAVY.png"
@@ -243,7 +244,7 @@
                     </article>
                 </div>
                 <div class="basis-1/2 flex items-center justify-center">
-                    <article
+                    <article data-aos="fade-up" data-aos-duration="600"
                         class="overflow-hidden rounded-md shadow transition hover:shadow-xl w-96 hover:skew-y-3 hover:scale-110">
                         <img alt="Office"
                             src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-dsc/events/5_Lj5oTwy.png"
@@ -285,7 +286,7 @@
     <section>
         <h2 class="text-5xl font-bold font-satoshi text-center my-10 mt-20">Request for an event</h2>
 
-        <section class="">
+        <section class="" data-aos="fade-up" data-aos-duration="600">
             <div class=" mx-auto max-w-screen-lg px-4 py-16 sm:px-6 lg:px-8">
 
 
@@ -407,7 +408,11 @@
 
 
 
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

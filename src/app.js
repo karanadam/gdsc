@@ -1,17 +1,19 @@
 // import { app as firebase } from "./Auth/firebase";
 
-$(document).ready(function () {
-  var mouseX, mouseY;
-  var ww = $(window).width();
-  var wh = $(window).height();
-  var traX, traY;
-  $(document).mousemove(function (e) {
+document.addEventListener("DOMContentLoaded", () => {
+  let mouseX, mouseY;
+  const ww = window.innerWidth;
+  const wh = window.innerHeight;
+  let traX, traY;
+
+  document.addEventListener("mousemove", (e) => {
     mouseX = e.pageX;
     mouseY = e.pageY;
     traX = (40 * mouseX) / 570 + 40;
     traY = (40 * mouseY) / 570 + 50;
     // console.log(traX);
-    $(".title").css({ "background-position": traX + "%" + traY + "%" });
+    const title = document.querySelector(".title");
+    title.style.backgroundPosition = `${traX}% ${traY}%`;
   });
 });
 

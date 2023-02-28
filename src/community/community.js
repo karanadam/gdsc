@@ -1,17 +1,21 @@
 // text-clip effect
-$(document).ready(function () {
-  var mouseX, mouseY;
-  var ww = $(window).width();
-  var wh = $(window).height();
-  var traX, traY;
-  $(document).mousemove(function (e) {
+document.addEventListener("DOMContentLoaded", () => {
+  let mouseX, mouseY;
+  const ww = window.innerWidth;
+  const wh = window.innerHeight;
+  let traX, traY;
+
+  document.addEventListener("mousemove", (e) => {
     mouseX = e.pageX;
     mouseY = e.pageY;
-    traX = (100 * mouseX) / 1000 + 40;
-    traY = (100 * mouseY) / 1000 + 50;
-    console.log(traX);
-    $(".title").css({ "background-position": traX + "%" + traY + "%" });
+    traX = (40 * mouseX) / 570 + 40;
+    traY = (40 * mouseY) / 570 + 50;
+    // console.log(traX);
+    const title = document.querySelector(".title");
+    title.style.backgroundPosition = `${traX}% ${traY}%`;
   });
+});
+
 });
 
 // hacker
