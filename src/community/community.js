@@ -16,8 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-});
-
 // hacker
 //home
 {
