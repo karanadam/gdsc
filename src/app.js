@@ -1,5 +1,9 @@
 // import { app as firebase } from "./Auth/firebase";
 
+alert(
+  "Please reduce the zoom level (around 80%) on your browser *if* the content doesnt fit"
+);
+
 document.addEventListener("DOMContentLoaded", () => {
   let mouseX, mouseY;
   const ww = window.innerWidth;
