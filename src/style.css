@@ -12,7 +12,7 @@ body{
 
 
 .title {
-    background-image: url(./public/gradient.png);
+    background-image: url(../public/gradient.png);
     background-attachment: fixed;
     background-position: 40% 50%;
     -webkit-text-fill-color: transparent;
